@@ -1,0 +1,54 @@
+h1 {
+    color: gray;
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  /* START BELOW THIS LINE */
+  
+@media (max-width: 800px) {
+    body {
+      background-color: navy;
+    }
+  }
+  @media (max-width: 600px) {
+    body {
+      background-color: orange;
+    }
+  }
+  @media (max-height: 400px) and (min-width: 600px) {
+   #one{
+border: 10px dashed gray ;
+   }
+   #three{
+    border: 10px dotted gray ;
+       } 
+    }
+    @media (min-height: 500px) or (min-width: 900px) {
+        #two{
+     border-top: 10px solid gray ;
+        }
+      
+         }
+         @media (orientation: landscape) {   
+            body{
+            display: flex;
+
+
+            }
+          
+             }
+             @media (orientation:portrait ) {   
+                body{
+                display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+                }
+              
+                 }
